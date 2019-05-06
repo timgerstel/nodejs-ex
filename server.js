@@ -8,7 +8,8 @@ var express = require('express'),
 Object.assign=require('object-assign')
 
 app.engine('html', require('ejs').renderFile);
-app.use(morgan('combined'))
+app.use(morgan('combined'));
+app.use(express.static('public'));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
@@ -80,7 +81,7 @@ var initDb = function(callback) {
 app.get('/', function (req, res) {
   // try to initialize the db on every request if it's not already
   // initialized.
-  if (!db) {
+  /*if (!db) {
     initDb(function(err){});
   }
   if (db) {
@@ -93,9 +94,9 @@ app.get('/', function (req, res) {
       }
       res.render('index.html', { pageCountMessage : count, dbInfo: dbDetails });
     });
-  } else {
-    res.render('index.html', { pageCountMessage : null});
-  }
+  } else {*/
+    res.render('index.html');
+  //
 });
 
 app.get('/canvas', (req, res) => {
