@@ -1,0 +1,94 @@
+header {
+  color: #ffffff;
+  background-color: #971b2f;
+  padding-top: 10px;
+  min-height: 10px;
+}
+
+header a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+header #projName {
+  float: left;
+}
+
+header #projName h1 {
+  margin-top: 0;
+}
+
+header nav {
+  float: right;
+  margin: 10px 0 0 0;
+}
+
+header ul {
+  margin: 0;
+  padding: 0;
+  margin-left: -10px;
+}
+
+header li {
+  float: left;
+  display: inline;
+  padding: 0 10px 0 10px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #ffffff;
+  font: 16px/1.5 Arial, sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+#app {
+  margin-top: 10px;
+}
+
+.container #appGrid {
+  max-width: 1300px;
+  min-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container #appGrid td {
+  padding: 0px !important;
+  width: 15px;
+  height: 15px;
+  float: left;
+  vertical-align: top;
+}
+
+.container #appGrid input[type='text'] {
+  vertical-align: top;
+  padding: 0px !important;
+  width: 16px;
+  height: 17px;
+  float: left;
+  font-size: 12px;
+  line-height: 13px;
+  text-align: center;
+}
+
+#team {
+  margin-top: 10px;
+}
+
+#team .hGrid {
+  width: 25%;
+  padding: 0px;
+  float: left;
+}
+
+#team .hGrid img {
+  width: 120px;
+}
